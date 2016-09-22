@@ -17,19 +17,12 @@ flavorJson = []
 
 for buyer in buyers:
     jsonstring = json.loads(buyer)
-    #flavorJson.append(buyer)
+    flavorJson.append(jsonstring)
     if len(jsonstring['handle']) > 0:
         strings.append(jsonstring['menutype'] + '/'+jsonstring['handle']) 
-    titles.append(jsonstring['label'])
     handles.append(jsonstring['handle'])
-    descriptions.append(jsonstring['description'])
-'''
+    
 
-for title in titles:
-    print titl 
-'''
-
-'''
 print strings
 extensions = ['jpg']
 for imagename in strings:
@@ -50,6 +43,6 @@ for imagename in strings:
 	        f.write(data)
 	except:
 	    pass
-'''
+
 print flavorJson
 
